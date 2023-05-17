@@ -60,12 +60,12 @@ rdf:langString rdf:type rdfs:Datatype .
                                                         <http://www.w3.org/2004/02/skos/core#definition> "The different agents that are creating the input stream"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/dependsOn
-<https://anonymous.4open.science/r/pkg-90F7/dependsOn> rdf:type owl:ObjectProperty ;
+###  https://anonymous.4open.science/r/pkg-2023/dependsOn
+<https://anonymous.4open.science/r/pkg-2023/dependsOn> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf owl:topObjectProperty ;
-                                               rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/SharedObject> ;
-                                               rdfs:range <https://anonymous.4open.science/r/pkg-90F7/InputStream> ,
-                                                          <https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities> ;
+                                               rdfs:domain <https://anonymous.4open.science/r/pkg-2023/SharedObject> ;
+                                               rdfs:range <https://anonymous.4open.science/r/pkg-2023/InputStream> ,
+                                                          <https://anonymous.4open.science/r/pkg-2023/RecognizedEntities> ;
                                                rdfs:label "dependsOn"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "The parameters that the shared object depends on"@en .
 

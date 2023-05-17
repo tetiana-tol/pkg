@@ -1,0 +1,25 @@
+---
+title: [Personal Knowledge Graph Ontology for Web Search]
+description: [It is an ontology describing a personal knowledge graph for web search]
+remote_theme: tuur29/pages-themes-cayman
+show_downloads: true
+darkmode: false
+syntax_theme:
+colors:
+    gradient_left: "#155799"
+    gradient_right: "#159957"
+    header: "#fff"
+    android_theme: "#000"
+    link: "#1e6bb8"
+    section_title: "#155799"
+buttons:
+      zip_url: use-case.html
+      zip_title: Use case
+      zip_hide: false
+      tar_url: ontology-description.html
+      tar_title: PKG description
+      tar_hide: false
+      github_hide: true
+---
+
+theme: jekyll-theme-cayman

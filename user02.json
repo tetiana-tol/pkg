@@ -1,0 +1,37 @@
+{
+   "entities":[
+      {
+         "uri":"http://dbpedia.org/resource/World_War_I",
+         "query":"World War I",
+         "weight":8373.0
+      },
+      {
+         "uri":"http://dbpedia.org/resource/Nazi_Germany",
+         "query":"Nazi Germany",
+         "weight":8373.0
+      },
+      {
+         "uri":"http://dbpedia.org/resource/World_War_II",
+         "query":"World War II",
+         "weight":8373.0
+      }
+   ],
+   "links":[
+      {
+         "source":0,
+         "target":1
+      },
+      {
+         "source":0,
+         "target":2
+      },
+      {
+         "source":1,
+         "target":2
+      }
+   ],
+   "user":{
+      "name":"user02"
+   },
+   "application":"collabGraph"
+}

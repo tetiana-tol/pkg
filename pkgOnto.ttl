@@ -4,11 +4,11 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://anonymous.4open.science/r/pkg-90F7/> .
+@base <https://anonymous.4open.science/r/pkg-2023/> .
 
 
-<https://anonymous.4open.science/r/pkg-90F7/> rdf:type owl:Ontology ;
-                                      owl:versionIRI <https://anonymous.4open.science/r/pkg-90F7/0.1.0> ;
+<https://anonymous.4open.science/r/pkg-2023/> rdf:type owl:Ontology ;
+                                      owl:versionIRI <https://anonymous.4open.science/r/pkg-2023/0.1.0> ;
                                       <http://purl.org/dc/terms/license> "CC-BY-SA 4.0" ;
                                       <http://purl.org/dc/terms/created> "2023-05-01" ;
                                       <http://purl.org/dc/terms/language> "en" ;
@@ -39,23 +39,23 @@ rdf:langString rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://anonymous.4open.science/r/pkg-90F7/contains
-<https://anonymous.4open.science/r/pkg-90F7/contains> rdf:type owl:ObjectProperty ;
+###  https://anonymous.4open.science/r/pkg-2023/contains
+<https://anonymous.4open.science/r/pkg-2023/contains> rdf:type owl:ObjectProperty ;
                                               rdfs:subPropertyOf owl:topObjectProperty ;
-                                              rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/SearchSession> ;
-                                              rdfs:range <https://anonymous.4open.science/r/pkg-90F7/SearchQuery> ,
-                                                         <https://anonymous.4open.science/r/pkg-90F7/SearchResult> ;
+                                              rdfs:domain <https://anonymous.4open.science/r/pkg-2023/SearchSession> ;
+                                              rdfs:range <https://anonymous.4open.science/r/pkg-2023/SearchQuery> ,
+                                                         <https://anonymous.4open.science/r/pkg-2023/SearchResult> ;
                                               rdfs:label "contains"@en ;
                                               <http://www.w3.org/2004/02/skos/core#definition> "The content of the search session"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/createsInputStream
-<https://anonymous.4open.science/r/pkg-90F7/createsInputStream> rdf:type owl:ObjectProperty ;
+###  https://anonymous.4open.science/r/pkg-2023/createsInputStream
+<https://anonymous.4open.science/r/pkg-2023/createsInputStream> rdf:type owl:ObjectProperty ;
                                                         rdfs:subPropertyOf owl:topObjectProperty ;
                                                         rdfs:domain <http://xmlns.com/foaf/spec/#term_Group> ,
-                                                                    <https://anonymous.4open.science/r/pkg-90F7/SearchSession> ,
+                                                                    <https://anonymous.4open.science/r/pkg-2023/SearchSession> ,
                                                                     <https://github.com/tibonto/educor#UserProfile> ;
-                                                        rdfs:range <https://anonymous.4open.science/r/pkg-90F7/InputStream> ;
+                                                        rdfs:range <https://anonymous.4open.science/r/pkg-2023/InputStream> ;
                                                         rdfs:label "createsInputStream"@en ;
                                                         <http://www.w3.org/2004/02/skos/core#definition> "The different agents that are creating the input stream"@en .
 
@@ -70,20 +70,20 @@ rdf:langString rdf:type rdfs:Datatype .
                                                <http://www.w3.org/2004/02/skos/core#definition> "The parameters that the shared object depends on"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/generatesResult
-<https://anonymous.4open.science/r/pkg-90F7/generatesResult> rdf:type owl:ObjectProperty ;
+###  https://anonymous.4open.science/r/pkg-2023/generatesResult
+<https://anonymous.4open.science/r/pkg-2023/generatesResult> rdf:type owl:ObjectProperty ;
                                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                                     rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/SearchQuery> ;
-                                                     rdfs:range <https://anonymous.4open.science/r/pkg-90F7/SearchResult> ;
+                                                     rdfs:domain <https://anonymous.4open.science/r/pkg-2023/SearchQuery> ;
+                                                     rdfs:range <https://anonymous.4open.science/r/pkg-2023/SearchResult> ;
                                                      rdfs:label "generatesResult"@en ;
                                                      <http://www.w3.org/2004/02/skos/core#definition> "The web results generated by the search query"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/processes
-<https://anonymous.4open.science/r/pkg-90F7/processes> rdf:type owl:ObjectProperty ;
+###  https://anonymous.4open.science/r/pkg-2023/processes
+<https://anonymous.4open.science/r/pkg-2023/processes> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf owl:topObjectProperty ;
-                                               rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities> ;
-                                               rdfs:range <https://anonymous.4open.science/r/pkg-90F7/InputStream> ;
+                                               rdfs:domain <https://anonymous.4open.science/r/pkg-2023/RecognizedEntities> ;
+                                               rdfs:range <https://anonymous.4open.science/r/pkg-2023/InputStream> ;
                                                rdfs:label "processes"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "The input of the classifier, the item that is processing"@en .
 
@@ -92,7 +92,7 @@ rdf:langString rdf:type rdfs:Datatype .
 <https://github.com/tibonto/educor#accessibility> rdf:type owl:ObjectProperty ;
                                                   rdfs:subPropertyOf owl:topObjectProperty ;
                                                   rdfs:domain <http://xmlns.com/foaf/spec/#term_Group> ,
-                                                              <https://anonymous.4open.science/r/pkg-90F7/SharedObject> ,
+                                                              <https://anonymous.4open.science/r/pkg-2023/SharedObject> ,
                                                               <https://github.com/tibonto/educor#UserProfile> ;
                                                   rdfs:range <https://github.com/tibonto/educor#Accessibility> ;
                                                   rdfs:label "accessibility"@en ;
@@ -132,32 +132,32 @@ rdf:langString rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  https://anonymous.4open.science/r/pkg-90F7/groupType
-<https://anonymous.4open.science/r/pkg-90F7/groupType> rdf:type owl:DatatypeProperty ;
+###  https://anonymous.4open.science/r/pkg-2023/groupType
+<https://anonymous.4open.science/r/pkg-2023/groupType> rdf:type owl:DatatypeProperty ;
                                                rdfs:subPropertyOf owl:topDataProperty ;
                                                rdfs:domain <http://xmlns.com/foaf/spec/#term_Group> ;
                                                rdfs:range xsd:string ;
                                                rdfs:label "groupType"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "The type of a group (ex. private, public)."@en .
 
-###  https://anonymous.4open.science/r/pkg-90F7/surfaceForm
-<https://anonymous.4open.science/r/pkg-90F7/surfaceForm> rdf:type owl:DatatypeProperty ;
+###  https://anonymous.4open.science/r/pkg-2023/surfaceForm
+<https://anonymous.4open.science/r/pkg-2023/surfaceForm> rdf:type owl:DatatypeProperty ;
                                                rdfs:subPropertyOf owl:topDataProperty ;
-                                               rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities> ;
+                                               rdfs:domain <https://anonymous.4open.science/r/pkg-2023/RecognizedEntities> ;
                                                rdfs:range xsd:string ;
                                                rdfs:label "surfaceForm"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "The surface form of a word is the form of a word as it appears in the text. It represents the form in which the recognized entity was found."@en .
 
-###  https://anonymous.4open.science/r/pkg-90F7/similarityScore
-<https://anonymous.4open.science/r/pkg-90F7/similarityScore> rdf:type owl:DatatypeProperty ;
+###  https://anonymous.4open.science/r/pkg-2023/similarityScore
+<https://anonymous.4open.science/r/pkg-2023/similarityScore> rdf:type owl:DatatypeProperty ;
                                                rdfs:subPropertyOf owl:topDataProperty ;
-                                               rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities> ;
+                                               rdfs:domain <https://anonymous.4open.science/r/pkg-2023/RecognizedEntities> ;
                                                rdfs:range xsd:string ;
                                                rdfs:label "similarityScore"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "The confidence score of the classifier for the given recognized entity."@en .
 
-###  https://anonymous.4open.science/r/pkg-90F7/username
-<https://anonymous.4open.science/r/pkg-90F7/username> rdf:type owl:DatatypeProperty ;
+###  https://anonymous.4open.science/r/pkg-2023/username
+<https://anonymous.4open.science/r/pkg-2023/username> rdf:type owl:DatatypeProperty ;
                                               rdfs:subPropertyOf owl:topDataProperty ;
                                               rdfs:domain <https://github.com/tibonto/educor#UserProfile> ;
                                               rdfs:range xsd:string ;
@@ -168,9 +168,9 @@ rdf:langString rdf:type rdfs:Datatype .
 ###  https://schema.org/author
 <https://schema.org/author> rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf owl:topDataProperty ;
-                            rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/InputStream> ,
-                                        <https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities> ,
-                                        <https://anonymous.4open.science/r/pkg-90F7/SharedObject> ;
+                            rdfs:domain <https://anonymous.4open.science/r/pkg-2023/InputStream> ,
+                                        <https://anonymous.4open.science/r/pkg-2023/RecognizedEntities> ,
+                                        <https://anonymous.4open.science/r/pkg-2023/SharedObject> ;
                             rdfs:range xsd:string ;
                             rdfs:label "author"@en ;
                             <http://www.w3.org/2004/02/skos/core#definition> "The author of this content."@en .
@@ -178,7 +178,7 @@ rdf:langString rdf:type rdfs:Datatype .
 ###  https://schema.org/text
 <https://schema.org/text> rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf owl:topDataProperty ;
-                            rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/SearchResult> ;
+                            rdfs:domain <https://anonymous.4open.science/r/pkg-2023/SearchResult> ;
                             rdfs:range xsd:string ;
                             rdfs:label "text"@en ;
                             <http://www.w3.org/2004/02/skos/core#definition> "The textual content of this CreativeWork."@en .
@@ -188,11 +188,11 @@ rdf:langString rdf:type rdfs:Datatype .
 <https://schema.org/dateCreated> rdf:type owl:DatatypeProperty ;
                                  rdfs:subPropertyOf owl:topDataProperty ;
                                  rdfs:domain <http://xmlns.com/foaf/spec/#term_Group> ,
-                                             <https://anonymous.4open.science/r/pkg-90F7/InputStream> ,
-                                             <https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities> ,
-                                             <https://anonymous.4open.science/r/pkg-90F7/SearchQuery> ,
-                                             <https://anonymous.4open.science/r/pkg-90F7/SearchResult> ,
-                                             <https://anonymous.4open.science/r/pkg-90F7/SharedObject> ;
+                                             <https://anonymous.4open.science/r/pkg-2023/InputStream> ,
+                                             <https://anonymous.4open.science/r/pkg-2023/RecognizedEntities> ,
+                                             <https://anonymous.4open.science/r/pkg-2023/SearchQuery> ,
+                                             <https://anonymous.4open.science/r/pkg-2023/SearchResult> ,
+                                             <https://anonymous.4open.science/r/pkg-2023/SharedObject> ;
                                  rdfs:range xsd:dateTimeStamp ;
                                  rdfs:label "dateCreated"@en ;
                                  <http://www.w3.org/2004/02/skos/core#definition> "The date on which the CreativeWork was created or the item was added to a DataFeed."@en .
@@ -219,7 +219,7 @@ rdf:langString rdf:type rdfs:Datatype .
 ###  https://schema.org/endTime
 <https://schema.org/endTime> rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf owl:topDataProperty ;
-                             rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/SearchSession> ;
+                             rdfs:domain <https://anonymous.4open.science/r/pkg-2023/SearchSession> ;
                              rdfs:range xsd:dateTimeStamp ;
                              rdfs:label "endTime"@en ;
                              <http://www.w3.org/2004/02/skos/core#definition> "The endTime of the search session"@en .
@@ -237,7 +237,7 @@ rdf:langString rdf:type rdfs:Datatype .
 ###  https://schema.org/identifier
 <https://schema.org/identifier> rdf:type owl:DatatypeProperty ;
                                 rdfs:subPropertyOf owl:topDataProperty ;
-                                rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities> ;
+                                rdfs:domain <https://anonymous.4open.science/r/pkg-2023/RecognizedEntities> ;
                                 rdfs:range xsd:anyURI ;
                                 rdfs:label "identifier"@en ;
                                 <http://www.w3.org/2004/02/skos/core#definition> "The URI of the recognized entity"@en .
@@ -265,7 +265,7 @@ rdf:langString rdf:type rdfs:Datatype .
 ###  https://schema.org/startTime
 <https://schema.org/startTime> rdf:type owl:DatatypeProperty ;
                                rdfs:subPropertyOf owl:topDataProperty ;
-                               rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/SearchSession> ;
+                               rdfs:domain <https://anonymous.4open.science/r/pkg-2023/SearchSession> ;
                                rdfs:range xsd:dateTimeStamp ;
                                rdfs:label "startTime"@en ;
                                <http://www.w3.org/2004/02/skos/core#definition> "The startTime of the search session"@en .
@@ -274,9 +274,9 @@ rdf:langString rdf:type rdfs:Datatype .
 ###  https://schema.org/text
 <https://schema.org/text> rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf owl:topDataProperty ;
-                          rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/InputStream> ,
-                                      <https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities> ,
-                                      <https://anonymous.4open.science/r/pkg-90F7/SearchResult> ,
+                          rdfs:domain <https://anonymous.4open.science/r/pkg-2023/InputStream> ,
+                                      <https://anonymous.4open.science/r/pkg-2023/RecognizedEntities> ,
+                                      <https://anonymous.4open.science/r/pkg-2023/SearchResult> ,
                                       <https://github.com/tibonto/educor#Accessibility> ;
                           rdfs:range rdf:langString ;
                           rdfs:label "text"@en ;
@@ -285,7 +285,7 @@ rdf:langString rdf:type rdfs:Datatype .
 
 ###  https://schema.org/title
 <https://schema.org/title> rdf:type owl:DatatypeProperty ;
-                           rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/SearchResult> ;
+                           rdfs:domain <https://anonymous.4open.science/r/pkg-2023/SearchResult> ;
                            rdfs:range xsd:string ;
                            rdfs:label "title"@en ;
                            <http://www.w3.org/2004/02/skos/core#definition> "The title of an item"@en .
@@ -294,7 +294,7 @@ rdf:langString rdf:type rdfs:Datatype .
 ###  https://schema.org/url
 <https://schema.org/url> rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf owl:topDataProperty ;
-                         rdfs:domain <https://anonymous.4open.science/r/pkg-90F7/SearchResult> ;
+                         rdfs:domain <https://anonymous.4open.science/r/pkg-2023/SearchResult> ;
                          rdfs:range xsd:anyURI ;
                          rdfs:label "url"@en ;
                          <http://www.w3.org/2004/02/skos/core#definition> "URL of the item."@en .
@@ -310,49 +310,49 @@ rdf:langString rdf:type rdfs:Datatype .
                                          <http://www.w3.org/2004/02/skos/core#definition> "A group a user is member of."@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/InputStream
-<https://anonymous.4open.science/r/pkg-90F7/InputStream> rdf:type owl:Class ;
+###  https://anonymous.4open.science/r/pkg-2023/InputStream
+<https://anonymous.4open.science/r/pkg-2023/InputStream> rdf:type owl:Class ;
                                                  rdfs:label "InputStream"@en ;
                                                  <http://www.w3.org/2004/02/skos/core#definition> "The input stream to the classifier"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities
-<https://anonymous.4open.science/r/pkg-90F7/RecognizedEntities> rdf:type owl:Class ;
+###  https://anonymous.4open.science/r/pkg-2023/RecognizedEntities
+<https://anonymous.4open.science/r/pkg-2023/RecognizedEntities> rdf:type owl:Class ;
                                                         rdfs:label "RecognizedEntities"@en ;
                                                         <http://www.w3.org/2004/02/skos/core#definition> "The recognized entities from the classifier"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/SearchQuery
-<https://anonymous.4open.science/r/pkg-90F7/SearchQuery> rdf:type owl:Class ;
+###  https://anonymous.4open.science/r/pkg-2023/SearchQuery
+<https://anonymous.4open.science/r/pkg-2023/SearchQuery> rdf:type owl:Class ;
                                                  rdfs:label "SearchQuery"@en ;
                                                  rdfs:seeAlso <https://schema.org/query> ;
                                                  <http://www.w3.org/2004/02/skos/core#definition> "The search query the user is formulating during the web search"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/SearchResult
-<https://anonymous.4open.science/r/pkg-90F7/SearchResult> rdf:type owl:Class ;
+###  https://anonymous.4open.science/r/pkg-2023/SearchResult
+<https://anonymous.4open.science/r/pkg-2023/SearchResult> rdf:type owl:Class ;
                                                   rdfs:label "SearchResult"@en ;
                                                   rdfs:seeAlso <https://schema.org/result> ;
                                                   <http://www.w3.org/2004/02/skos/core#definition> "The result of the search query"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/SearchSession
-<https://anonymous.4open.science/r/pkg-90F7/SearchSession> rdf:type owl:Class ;
+###  https://anonymous.4open.science/r/pkg-2023/SearchSession
+<https://anonymous.4open.science/r/pkg-2023/SearchSession> rdf:type owl:Class ;
                                                    rdfs:subClassOf <https://github.com/tibonto/educor#UserLogs> ;
                                                    rdfs:label "SearchSession"@en ;
                                                    rdfs:seeAlso <https://schema.org/SearchAction> ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A search activity from the beginning to the end"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/SharedObject
-<https://anonymous.4open.science/r/pkg-90F7/SharedObject> rdf:type owl:Class ;
+###  https://anonymous.4open.science/r/pkg-2023/SharedObject
+<https://anonymous.4open.science/r/pkg-2023/SharedObject> rdf:type owl:Class ;
                                                   rdfs:label "SharedObject"@en ;
                                                   <http://www.w3.org/2004/02/skos/core#definition> "The object that is passed to the downstream application from the backend"@en .
 
 
-###  https://anonymous.4open.science/r/pkg-90F7/Snippet
-<https://anonymous.4open.science/r/pkg-90F7/Snippet> rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://anonymous.4open.science/r/pkg-90F7/SearchResult> ;
+###  https://anonymous.4open.science/r/pkg-2023/Snippet
+<https://anonymous.4open.science/r/pkg-2023/Snippet> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://anonymous.4open.science/r/pkg-2023/SearchResult> ;
                                              rdfs:label "Snippet"@en ;
                                              <http://www.w3.org/2004/02/skos/core#definition> "A snippet of a webpage. It contains the title and a few lines of the webpage"@en .
 
@@ -388,7 +388,7 @@ rdf:langString rdf:type rdfs:Datatype .
 
 ###  https://schema.org/WebPage
 <https://schema.org/WebPage> rdf:type owl:Class ;
-                             rdfs:subClassOf <https://anonymous.4open.science/r/pkg-90F7/SearchResult> ;
+                             rdfs:subClassOf <https://anonymous.4open.science/r/pkg-2023/SearchResult> ;
                              rdfs:label "WebPage"@en ;
                              <http://www.w3.org/2004/02/skos/core#definition> "A web page"@en .
 

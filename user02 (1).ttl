@@ -2,6 +2,7 @@
 @prefix educor: <https://github.com/tibonto/educor#> .
 @prefix foaf:   <http://xmlns.com/foaf/spec/> .
 @prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <RecognizedEntities/European_theatre_of_World_War_II>
         <confidenceScore>     "1.0" ;
